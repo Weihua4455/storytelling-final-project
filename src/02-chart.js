@@ -36,7 +36,7 @@ let svg = container
 
 var xPositionScale = d3.scaleLinear().range([0, width])
 var yPositionScale = d3.scaleLinear().range([height, 0])
-const colorScale = d3.scaleOrdinal().range(['pink', 'green'])
+const colorScale = d3.scaleOrdinal().range(['pink', 'green']).domain(['male', 'female'])
 
 // Not doing anything, but it's nice to always keep a context
 d3.csv(require('./data/obit_data_for_graph.csv')).then(ready)
